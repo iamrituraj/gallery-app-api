@@ -5,7 +5,6 @@ const cors = require("cors");
 app.use(cors());
 const Datastore = require("nedb");
 
-
 app.use(express.json());
 
 const db = new Datastore("../gallery-app/db/data.db");
