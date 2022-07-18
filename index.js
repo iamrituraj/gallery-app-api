@@ -8,12 +8,6 @@ const Datastore = require("nedb");
 
 app.use(express.json());
 
-// app.use(
-//   express.json({
-//     limit: "5mb",
-//   })
-// );
-
 const db = new Datastore("../gallery-app/db/data.db");
 
 db.loadDatabase();
